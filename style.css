@@ -24,6 +24,10 @@ input[type="radio"] {
   width: 70%;
 }
 
+.list-item:hover > .meme-title ~ .meme,
+.r-meme-input:checked ~ .meme{
+  height: 100%;
+}
 
 /* margin and padding setting for meme */
 .list-item {
@@ -62,13 +66,18 @@ input[type="radio"] {
 
 .meme-title {
   font-size: 1.5rem;
+  cursor: pointer;
 }
 
+.meme {
+  height: 0;
+  transition: 0.5s ease-in;
+}
 
 /* size */
 img {
-  margin: 1rem auto;
   display: block;
   width: 0%;
+  margin: 1rem auto;
   transition: all 0.5s ease-in;
 }
