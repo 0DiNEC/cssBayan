@@ -56,7 +56,6 @@ input[type="radio"] {
 .list-item {
   display: flex;
   flex-direction: column;
-  min-height: 8vh;
   cursor: pointer;
 }
 
@@ -129,6 +128,10 @@ img {
   img {
     margin: 4rem auto;
   }
+
+  .list-item {
+    min-height: 8vh;
+  }
 }
 
 @media (min-width: 480px) {
@@ -153,7 +156,10 @@ img {
   img {
     margin: 5rem auto;
   }
-  
+
+  .list-item {
+    min-height: 12vh;
+  }
 }
 
 @media (min-width: 1400px) {
