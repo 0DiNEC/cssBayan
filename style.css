@@ -1,0 +1,74 @@
+/* set default setting */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #272727;
+  color: #ffecec;
+}
+
+/* radio setting */
+
+/* hiden*/
+input[type="radio"] {
+  appearance: none;
+  visibility: hidden;
+}
+
+/* accordion functionality */
+.list-item:hover > .meme-title ~ .meme > img,
+.r-meme-input:checked ~ .meme > img{
+  width: 70%;
+}
+
+
+/* margin and padding setting for meme */
+.list-item {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.list-item:hover {
+  color: red;
+}
+
+.meme-list {
+  max-width: 70%;
+  margin: 5vh auto;
+}
+
+.meme-title{
+  display: block;
+  height: 5vh;
+  border-top: 0.2rem solid gray;
+  transition: 0.3s ease-in-out;
+}
+
+/* Font settings */
+.meme-list-title,
+.meme-title {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  font-weight: bold;
+}
+
+.meme-list-title {
+  font-size: 2rem;
+}
+
+.meme-title {
+  font-size: 1.5rem;
+}
+
+
+/* size */
+img {
+  margin: 1rem auto;
+  display: block;
+  width: 0%;
+  transition: all 0.5s ease-in;
+}
