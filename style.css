@@ -178,4 +178,8 @@ img {
   img {
     margin: 5rem auto;
   }
+
+  .list-item {
+    min-height: 16vh;
+  }
 }
