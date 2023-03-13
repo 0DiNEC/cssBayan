@@ -66,9 +66,12 @@ input[type="radio"] {
 
 .meme-title {
   display: flex;
-  height: 5vh;
   border-top: 0.2rem solid gray;
   transition: 0.3s ease-in-out;
+}
+
+.meme-title p {
+  width: 90%;
 }
 
 /* Font settings */
@@ -101,10 +104,10 @@ input[type="radio"] {
 img {
   display: block;
   width: 0%;
+  margin: 0 auto;
+  padding-top: 5rem;
   transition: all 0.5s ease-in;
 }
-
-
 
 @media (min-width: 220px) {
   .meme-list-title {
@@ -121,16 +124,16 @@ img {
 
   .list-item:hover > .meme-title > .arrow,
   .r-meme-input:checked ~ .meme-title > .arrow {
-    border-width: 0 0.5rem 0.0rem 0.5rem;
+    border-width: 0 0.5rem 0rem 0.5rem;
     border-color: transparent transparent #ff0000;
   }
 
   img {
-    margin: 4rem auto;
+    padding-top: 3rem;
   }
 
   .list-item {
-    min-height: 8vh;
+    min-height: 8rem;
   }
 }
 
@@ -151,10 +154,6 @@ img {
   .r-meme-input:checked ~ .meme-title > .arrow {
     border-width: 0 1rem 1.3rem 1rem;
     border-color: transparent transparent #ff0000;
-  }
-
-  img {
-    margin: 5rem auto;
   }
 
   .list-item {
@@ -179,10 +178,6 @@ img {
   .r-meme-input:checked ~ .meme-title > .arrow {
     border-width: 0 1.5rem 1.8rem 1.5rem;
     border-color: transparent transparent #ff0000;
-  }
-  
-  img {
-    margin: 5rem auto;
   }
 
   .list-item {
